@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customer Dashboard - Stackly</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <div class="dashboard">
+      <aside class="sidebar">
+        <a class="logo sidebar-svg-logo" href="index.html" aria-label="Stackly home">
+          <img src="images/stackly-logo.webp" alt="Stackly" />
+        </a>
+        <ul>
+          <li>
+            <a href="customer-dashboard.html">
+              <span class="side-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M4 10.5 12 4l8 6.5V20a1.5 1.5 0 0 1-1.5 1.5H5.5A1.5 1.5 0 0 1 4 20v-9.5Z"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M9 21v-7.2c0-.4.3-.8.8-.8h4.4c.5 0 .8.4.8.8V21"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </span>
+              <span>Overview</span>
+            </a>
+          </li>
+          <li>
+            <a href="404.html">
+              <span class="side-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <circle
+                    cx="12"
+                    cy="8"
+                    r="4"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                  />
+                  <path
+                    d="M4.5 21a7.5 7.5 0 0 1 15 0"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </span>
+              <span>Profile</span>
+            </a>
+          </li>
+          <li>
+            <a href="404.html">
+              <span class="side-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M5 6.5A3.5 3.5 0 0 1 8.5 3h7A3.5 3.5 0 0 1 19 6.5v7A3.5 3.5 0 0 1 15.5 17H10l-4.2 3.2c-.5.4-1.3 0-1.3-.6V6.5Z"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M8 8.5h8M8 12h6"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </span>
+              <span>Messages</span>
+            </a>
+          </li>
+          <li>
+            <a href="404.html">
+              <span class="side-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M4 7.5A2.5 2.5 0 0 1 6.5 5H11l2 2h4.5A2.5 2.5 0 0 1 20 9.5V19a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7.5Z"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+              <span>Documents</span>
+            </a>
+          </li>
+          <li>
+            <a href="login.html">
+              <span class="side-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M10 7V6a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-6a2 2 0 0 1-2-2v-1"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M13 12H4m0 0 3-3m-3 3 3 3"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+              <span>Logout</span>
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <main class="dash-main">
+        <header class="dash-header">
+          <div>
+            <h1>Welcome back</h1>
+            <p class="dash-header-meta">
+              Acme Logistics · Primary contact · Statement currency: USD
+            </p>
+          </div>
+          <p class="dash-header-meta">Next steering call: Apr 2, 10:00 UTC</p>
+        </header>
+
+        <div class="dash-cards mt-2">
+          <div class="card glass dash-stat-card">
+            <h3>4</h3>
+            <p>Active projects</p>
+            <span class="dash-stat-trend dash-stat-trend--up">+1 new this quarter</span>
+          </div>
+          <div class="card glass dash-stat-card">
+            <h3>2</h3>
+            <p>Open invoices</p>
+            <span class="dash-stat-trend dash-stat-trend--warn">$14.2K due in 12d</span>
+          </div>
+          <div class="card glass dash-stat-card">
+            <h3>7</h3>
+            <p>Unread messages</p>
+            <span class="dash-stat-trend dash-stat-trend--neutral">3 from your pod lead</span>
+          </div>
+          <div class="card glass dash-stat-card">
+            <h3>92%</h3>
+            <p>Weighted milestone progress</p>
+            <span class="dash-stat-trend dash-stat-trend--up">Ahead of baseline plan</span>
+          </div>
+        </div>
+
+        <div class="dash-chart-grid mt-3">
+          <section class="content-block glass dash-chart-card">
+            <h3>Program burn vs plan</h3>
+            <p class="dash-chart-caption">
+              Cumulative milestone completion for the flagship program (week 8 of 12).
+            </p>
+            <div class="dash-chart-canvas-wrap dash-chart-canvas-wrap--tall">
+              <canvas id="customerMilestoneChart" aria-label="Milestone chart"></canvas>
+            </div>
+          </section>
+          <section class="content-block glass dash-chart-card">
+            <h3>Budget allocation</h3>
+            <p class="dash-chart-caption">
+              Approved Q2 engineering budget by workstream (committed + reserved).
+            </p>
+            <div class="dash-chart-canvas-wrap dash-chart-canvas-wrap--compact">
+              <canvas id="customerBudgetChart" aria-label="Budget chart"></canvas>
+            </div>
+            <div class="dash-kpi-row dash-kpi-row--2" style="margin-top: 8px">
+              <div class="dash-kpi">
+                <strong>$186K</strong>
+                <span>Committed to date</span>
+              </div>
+              <div class="dash-kpi">
+                <strong>$42K</strong>
+                <span>Contingency remaining</span>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <section class="content-block glass mt-3 dash-chart-card">
+          <h3>Hours by discipline (30 days)</h3>
+          <p class="dash-chart-caption">
+            Billable effort attributed to your statements; infra includes CI/CD and
+            observability work.
+          </p>
+          <div class="dash-chart-canvas-wrap">
+            <canvas id="customerHoursChart" aria-label="Hours bar chart"></canvas>
+          </div>
+        </section>
+
+        <div class="dash-split mt-3">
+          <section class="content-block glass">
+            <h3 class="dash-section-title">Account profile</h3>
+            <p class="dash-section-desc">
+              Primary billing and technical contacts on file (demo — edit in Profile).
+            </p>
+            <table>
+              <tbody>
+                <tr>
+                  <th scope="row">Organization</th>
+                  <td>Acme Logistics Inc.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Primary contact</th>
+                  <td>Alex Carter · alex@client.com</td>
+                </tr>
+                <tr>
+                  <th scope="row">Technical lead</th>
+                  <td>Morgan Patel · morgan@stacklyit.com</td>
+                </tr>
+                <tr>
+                  <th scope="row">Billing ID</th>
+                  <td>CUST-4891 · Net 30</td>
+                </tr>
+                <tr>
+                  <th scope="row">Data residency</th>
+                  <td>US regions (Oregon + Virginia)</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+          <section class="content-block glass">
+            <h3 class="dash-section-title">Open invoices</h3>
+            <p class="dash-section-desc">
+              Pay online or download PDF from the full Invoices workspace.
+            </p>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Invoice</th>
+                    <th>Period</th>
+                    <th>Amount</th>
+                    <th>Due</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>INV-2026-014</td>
+                    <td>Mar 2026</td>
+                    <td>$8,400</td>
+                    <td><span class="dash-pill dash-pill--warn">Apr 9</span></td>
+                  </tr>
+                  <tr>
+                    <td>INV-2026-009</td>
+                    <td>Feb 2026</td>
+                    <td>$5,800</td>
+                    <td><span class="dash-pill dash-pill--ok">Paid</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </div>
+
+        <section class="content-block glass mt-3">
+          <h3 class="dash-section-title">Active projects</h3>
+          <p class="dash-section-desc">
+            Health, next milestone, and burn against forecast. Green = on track,
+            amber = watch, red = needs decision.
+          </p>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Project</th>
+                  <th>Lead</th>
+                  <th>Progress</th>
+                  <th>Next milestone</th>
+                  <th>Health</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Payment gateway modernization</td>
+                  <td>R. Kim</td>
+                  <td>
+                    75%
+                    <div class="dash-progress" aria-hidden="true">
+                      <div class="dash-progress-fill" style="width: 75%"></div>
+                    </div>
+                  </td>
+                  <td>Load test sign-off</td>
+                  <td><span class="dash-pill dash-pill--ok">On track</span></td>
+                </tr>
+                <tr>
+                  <td>CRM UI refresh &amp; APIs</td>
+                  <td>J. Ortiz</td>
+                  <td>
+                    60%
+                    <div class="dash-progress" aria-hidden="true">
+                      <div class="dash-progress-fill" style="width: 60%"></div>
+                    </div>
+                  </td>
+                  <td>Design QA complete</td>
+                  <td><span class="dash-pill dash-pill--warn">Watch</span></td>
+                </tr>
+                <tr>
+                  <td>Observability rollout</td>
+                  <td>S. Nguyen</td>
+                  <td>
+                    40%
+                    <div class="dash-progress" aria-hidden="true">
+                      <div class="dash-progress-fill" style="width: 40%"></div>
+                    </div>
+                  </td>
+                  <td>Dashboards v1 live</td>
+                  <td><span class="dash-pill dash-pill--ok">On track</span></td>
+                </tr>
+                <tr>
+                  <td>Mobile driver app v3</td>
+                  <td>T. Ibrahim</td>
+                  <td>
+                    22%
+                    <div class="dash-progress" aria-hidden="true">
+                      <div class="dash-progress-fill" style="width: 22%"></div>
+                    </div>
+                  </td>
+                  <td>Auth migration spike</td>
+                  <td><span class="dash-pill dash-pill--info">Planning</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="content-block glass mt-3">
+          <h3 class="dash-section-title">Requested services (scope summary)</h3>
+          <p class="dash-section-desc">
+            Active statements of work linked to the programs above. Change orders
+            appear as child line items in the full portal.
+          </p>
+          <ul class="dash-activity">
+            <li>
+              <time>SOW</time>
+              <p>
+                <strong>Platform engineering</strong> — API hardening, rate limiting,
+                and PCI-aligned logging for checkout v2 (through Jul 2026).
+              </p>
+            </li>
+            <li>
+              <time>SOW</time>
+              <p>
+                <strong>Cloud migration</strong> — EKS baseline, secrets rotation, and
+                cost guardrails for non-prod (through May 2026).
+              </p>
+            </li>
+            <li>
+              <time>Add-on</time>
+              <p>
+                <strong>QA automation</strong> — Playwright suite for critical journeys
+                + CI gate (monthly retainer).
+              </p>
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
+    <script src="js/main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/dashboard-charts.js"></script>
+  </body>
+</html>

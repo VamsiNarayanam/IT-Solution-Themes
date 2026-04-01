@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Stackly</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body class="auth-page">
+    <section class="section auth-section">
+      <div class="container auth-card-wrap">
+        <div class="content-block glass auth-form-card">
+          <a class="logo auth-logo" href="index.html" aria-label="Stackly home">
+            <img src="images/stackly-logo.webp" alt="Stackly" />
+          </a>
+          <h1 class="auth-title">Login</h1>
+          <p class="auth-subtitle">
+            Access your Stackly client portal.
+          </p>
+          <form id="loginForm" data-validate-form>
+            <div class="field-wrap field-wrap--role">
+              <span class="form-label" id="login-role-label">Role</span>
+              <div
+                class="role-picker"
+                role="radiogroup"
+                aria-labelledby="login-role-label"
+              >
+                <label class="role-box">
+                  <input
+                    type="radio"
+                    name="role"
+                    value="admin"
+                    data-required
+                  />
+                  <span class="role-box-inner">
+                    <span class="role-box-icon" aria-hidden="true">
+                      <svg viewBox="0 0 48 48" width="40" height="40" fill="none">
+                        <path
+                          d="M24 4L8 12v12c0 11 8 20 16 22 8-2 16-11 16-22V12L24 4z"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M24 18v10M20 22h8"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                        />
+                      </svg>
+                    </span>
+                    <span class="role-box-title">Admin</span>
+                    <span class="role-box-desc">Dashboard &amp; management</span>
+                  </span>
+                </label>
+                <label class="role-box">
+                  <input type="radio" name="role" value="customer" />
+                  <span class="role-box-inner">
+                    <span class="role-box-icon" aria-hidden="true">
+                      <svg viewBox="0 0 48 48" width="40" height="40" fill="none">
+                        <circle
+                          cx="24"
+                          cy="16"
+                          r="8"
+                          stroke="currentColor"
+                          stroke-width="2"
+                        />
+                        <path
+                          d="M12 40c0-8 5.4-14 12-14s12 6 12 14"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                        />
+                      </svg>
+                    </span>
+                    <span class="role-box-title">Customer</span>
+                    <span class="role-box-desc">Projects &amp; support</span>
+                  </span>
+                </label>
+              </div>
+              <div class="error"></div>
+            </div>
+            <div class="field-wrap">
+              <label class="form-label" for="loginFullName">Full name</label>
+              <input
+                id="loginFullName"
+                type="text"
+                placeholder="Enter Your Name"
+                autocomplete="name"
+                data-required
+              />
+              <div class="error"></div>
+            </div>
+            <div class="field-wrap">
+              <label class="form-label" for="loginEmail">Email</label>
+              <input
+                id="loginEmail"
+                type="email"
+                placeholder="Enter Your Mail"
+                autocomplete="email"
+                data-required
+              />
+              <div class="error"></div>
+            </div>
+            <div class="field-wrap">
+              <label class="form-label" for="loginPassword">Password</label>
+              <input
+                id="loginPassword"
+                type="password"
+                placeholder="Enter Your Password"
+                autocomplete="current-password"
+                data-required
+                data-minlength="6"
+                data-minlength-msg="Password must be at least 6 characters."
+              />
+              <div class="error"></div>
+            </div>
+            <div class="field-wrap field-wrap--login-options">
+              <label class="checkbox-field" for="loginRemember">
+                <input
+                  id="loginRemember"
+                  name="remember"
+                  type="checkbox"
+                  data-required
+                  data-required-msg="Please check Remember me before login."
+                />
+                <span>Remember me on this device</span>
+              </label>
+              <a class="auth-forgot-link" href="contact.html">Forgot password?</a>
+            </div>
+            <button class="btn btn-primary" type="submit">Login</button>
+            <p class="mt-2 auth-footer-text">
+              No account? <a href="register.html">Register</a>
+            </p>
+          </form>
+          <a class="auth-back-link" href="index.html">
+            <span class="auth-back-arrow" aria-hidden="true">←</span>
+            Back to home
+          </a>
+        </div>
+      </div>
+    </section>
+    <script src="js/main.js"></script>
+  </body>
+</html>

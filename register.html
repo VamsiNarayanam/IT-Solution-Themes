@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register - Stackly</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body class="auth-page">
+    <section class="section auth-section">
+      <div class="container auth-card-wrap">
+        <div class="content-block glass auth-form-card">
+          <a class="logo auth-logo" href="index.html" aria-label="Stackly home">
+            <img src="images/stackly-logo.webp" alt="Stackly" />
+          </a>
+          <h1 class="auth-title">Create Account</h1>
+          <p class="auth-subtitle">
+            Register to request software services and track projects.
+          </p>
+          <form id="registerForm" data-validate-form>
+            <div class="field-wrap field-wrap--role">
+              <span class="form-label" id="role-label">Role</span>
+              <div
+                class="role-picker"
+                role="radiogroup"
+                aria-labelledby="role-label"
+              >
+                <label class="role-box">
+                  <input
+                    type="radio"
+                    name="registerRole"
+                    value="admin"
+                    data-required
+                  />
+                  <span class="role-box-inner">
+                    <span class="role-box-icon" aria-hidden="true">
+                      <svg viewBox="0 0 48 48" width="40" height="40" fill="none">
+                        <path
+                          d="M24 4L8 12v12c0 11 8 20 16 22 8-2 16-11 16-22V12L24 4z"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M24 18v10M20 22h8"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                        />
+                      </svg>
+                    </span>
+                    <span class="role-box-title">Admin</span>
+                    <span class="role-box-desc">Dashboard &amp; management</span>
+                  </span>
+                </label>
+                <label class="role-box">
+                  <input
+                    type="radio"
+                    name="registerRole"
+                    value="customer"
+                  />
+                  <span class="role-box-inner">
+                    <span class="role-box-icon" aria-hidden="true">
+                      <svg viewBox="0 0 48 48" width="40" height="40" fill="none">
+                        <circle
+                          cx="24"
+                          cy="16"
+                          r="8"
+                          stroke="currentColor"
+                          stroke-width="2"
+                        />
+                        <path
+                          d="M12 40c0-8 5.4-14 12-14s12 6 12 14"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                        />
+                      </svg>
+                    </span>
+                    <span class="role-box-title">Customer</span>
+                    <span class="role-box-desc">Projects &amp; support</span>
+                  </span>
+                </label>
+              </div>
+              <div class="error"></div>
+            </div>
+            <div class="field-wrap">
+              <label class="form-label" for="registerName">Full name</label>
+              <input
+                id="registerName"
+                type="text"
+                placeholder="Enter Your Name"
+                autocomplete="name"
+                data-required
+              />
+              <div class="error"></div>
+            </div>
+            <div class="field-wrap">
+              <label class="form-label" for="registerEmail">Email</label>
+              <input
+                id="registerEmail"
+                type="email"
+                placeholder="Enter Your Mail"
+                autocomplete="email"
+                data-required
+              />
+              <div class="error"></div>
+            </div>
+            <div class="field-wrap">
+              <label class="form-label" for="registerPassword">Password</label>
+              <input
+                id="registerPassword"
+                type="password"
+                placeholder="Create A Password"
+                autocomplete="new-password"
+                data-required
+                data-minlength="6"
+                data-minlength-msg="Password must be at least 6 characters."
+              />
+              <div class="error"></div>
+            </div>
+            <div class="field-wrap">
+              <label class="form-label" for="registerConfirm"
+                >Confirm password</label
+              >
+              <input
+                id="registerConfirm"
+                type="password"
+                placeholder="Confirm Your Password"
+                autocomplete="new-password"
+                data-required
+                data-match="#registerPassword"
+                data-match-msg="Passwords do not match."
+              />
+              <div class="error"></div>
+            </div>
+            <div class="field-wrap">
+              <label class="checkbox-field" for="registerTerms">
+                <input
+                  id="registerTerms"
+                  type="checkbox"
+                  data-required
+                />
+                <span
+                  >I agree to the Terms of Service and Privacy Policy.</span
+                >
+              </label>
+              <div class="error"></div>
+            </div>
+            <button class="btn btn-primary" type="submit">Register</button>
+            <p class="mt-2 auth-footer-text">
+              Already registered? <a href="login.html">Login</a>
+            </p>
+          </form>
+          <a class="auth-back-link" href="index.html">
+            <span class="auth-back-arrow" aria-hidden="true">←</span>
+            Back to home
+          </a>
+        </div>
+      </div>
+    </section>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard - Stackly</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <div class="dashboard">
+      <aside class="sidebar">
+        <a class="logo sidebar-svg-logo" href="index.html" aria-label="Stackly home">
+          <img src="images/stackly-logo.webp" alt="Stackly" />
+        </a>
+        <ul>
+          <li>
+            <a href="admin-dashboard.html">
+              <span class="side-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M4 13a2 2 0 0 1 2-2h2.5a2 2 0 0 1 2 2v6H6a2 2 0 0 1-2-2v-4Z"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M13.5 5h4A2.5 2.5 0 0 1 20 7.5V19a2 2 0 0 1-2 2h-4.5V7.5A2.5 2.5 0 0 1 16 5"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M10.5 19V9a2 2 0 0 1 2-2h1"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </span>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="404.html">
+              <span class="side-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M16 20v-1.5a3.5 3.5 0 0 0-3.5-3.5H7.5A3.5 3.5 0 0 0 4 18.5V20"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                  />
+                  <circle
+                    cx="10"
+                    cy="7.5"
+                    r="3.5"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                  />
+                  <path
+                    d="M20 20v-1.2a3.2 3.2 0 0 0-2.3-3.1"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M16.8 4.6a3.5 3.5 0 0 1 0 6.8"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </span>
+              <span>Users</span>
+            </a>
+          </li>
+          
+          <li>
+            <a href="404.html">
+              <span class="side-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M5 6.5A3.5 3.5 0 0 1 8.5 3h7A3.5 3.5 0 0 1 19 6.5v7A3.5 3.5 0 0 1 15.5 17H10l-4.2 3.2c-.5.4-1.3 0-1.3-.6V6.5Z"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M8 8.5h8M8 12h6"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </span>
+              <span>Messages</span>
+            </a>
+          </li>
+          <li>
+            <a href="404.html">
+              <span class="side-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M4 19V5m0 14h16"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M7 15l3-3 3 2 5-7"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+              <span>Analytics</span>
+            </a>
+          </li>
+          <li>
+            <a href="login.html">
+              <span class="side-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M10 7V6a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-6a2 2 0 0 1-2-2v-1"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M13 12H4m0 0 3-3m-3 3 3 3"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+              <span>Logout</span>
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <main class="dash-main">
+        <header class="dash-header">
+          <div>
+            <h1>Operations dashboard</h1>
+            <p class="dash-header-meta">
+              Live snapshot · Last refresh simulated · All times UTC
+            </p>
+          </div>
+          <p class="dash-header-meta">Saturday, Mar 28, 2026</p>
+        </header>
+
+        <div class="dash-cards mt-2">
+          <div class="card glass dash-stat-card">
+            <h3>1,245</h3>
+            <p>Total users</p>
+            <span class="dash-stat-trend dash-stat-trend--up">+4.2% vs last month</span>
+          </div>
+          <div class="card glass dash-stat-card">
+            <h3>83</h3>
+            <p>Open service requests</p>
+            <span class="dash-stat-trend dash-stat-trend--down">−6% vs last week</span>
+          </div>
+          <div class="card glass dash-stat-card">
+            <h3>29</h3>
+            <p>Unread messages</p>
+            <span class="dash-stat-trend dash-stat-trend--neutral">Flat vs yesterday</span>
+          </div>
+          <div class="card glass dash-stat-card">
+            <h3>$38K</h3>
+            <p>Recognized revenue (MTD)</p>
+            <span class="dash-stat-trend dash-stat-trend--up">+11% vs target</span>
+          </div>
+        </div>
+
+        <div class="dash-chart-grid mt-3">
+          <section class="content-block glass dash-chart-card">
+            <h3>Revenue vs target</h3>
+            <p class="dash-chart-caption">
+              Monthly recognized revenue in thousands (USD) against internal plan.
+            </p>
+            <div class="dash-chart-canvas-wrap">
+              <canvas id="adminRevenueChart" aria-label="Revenue line chart"></canvas>
+            </div>
+          </section>
+          <section class="content-block glass dash-chart-card">
+            <h3>Request pipeline</h3>
+            <p class="dash-chart-caption">
+              Count of tickets by workflow stage (rolling 7 days for open states).
+            </p>
+            <div class="dash-chart-canvas-wrap">
+              <canvas id="adminRequestsChart" aria-label="Requests bar chart"></canvas>
+            </div>
+          </section>
+        </div>
+
+        <div class="dash-chart-grid dash-chart-grid--triple mt-3">
+          <section class="content-block glass dash-chart-card">
+            <h3>Account mix</h3>
+            <p class="dash-chart-caption">Users by role classification.</p>
+            <div class="dash-chart-canvas-wrap dash-chart-canvas-wrap--compact">
+              <canvas id="adminRolesChart" aria-label="Roles doughnut chart"></canvas>
+            </div>
+          </section>
+          <section class="content-block glass dash-chart-card dash-chart-span-2">
+            <h3>First-response time by practice</h3>
+            <p class="dash-chart-caption">
+              Median minutes to first human response on new threads (lower is better).
+            </p>
+            <div class="dash-chart-canvas-wrap">
+              <canvas id="adminResponseChart" aria-label="Response radar chart"></canvas>
+            </div>
+          </section>
+        </div>
+
+        <section class="content-block glass mt-3">
+          <h3 class="dash-section-title">User directory</h3>
+          <p class="dash-section-desc">
+            Recently active accounts with role and verification flags. Export CSV from
+            the full Users screen (demo data).
+          </p>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Role</th>
+                  <th>Region</th>
+                  <th>Last active</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>John Smith</td>
+                  <td>john@example.com</td>
+                  <td>Customer</td>
+                  <td>US-East</td>
+                  <td>2h ago</td>
+                  <td><span class="dash-pill dash-pill--ok">Active</span></td>
+                </tr>
+                <tr>
+                  <td>Emma Lee</td>
+                  <td>emma@example.com</td>
+                  <td>Customer</td>
+                  <td>EU-West</td>
+                  <td>1d ago</td>
+                  <td><span class="dash-pill dash-pill--ok">Active</span></td>
+                </tr>
+                <tr>
+                  <td>David Ray</td>
+                  <td>david@example.com</td>
+                  <td>Admin</td>
+                  <td>US-West</td>
+                  <td>12m ago</td>
+                  <td><span class="dash-pill dash-pill--ok">Active</span></td>
+                </tr>
+                <tr>
+                  <td>Sofia Martins</td>
+                  <td>sofia@partner.io</td>
+                  <td>Partner</td>
+                  <td>LATAM</td>
+                  <td>4d ago</td>
+                  <td><span class="dash-pill dash-pill--warn">Review</span></td>
+                </tr>
+                <tr>
+                  <td>James Okonkwo</td>
+                  <td>j.okonkwo@corp.net</td>
+                  <td>Customer</td>
+                  <td>EU-Central</td>
+                  <td>18d ago</td>
+                  <td><span class="dash-pill dash-pill--bad">Suspended</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <div class="dash-split mt-3">
+          <section class="content-block glass">
+            <h3 class="dash-section-title">High-priority requests</h3>
+            <p class="dash-section-desc">
+              SLA-risk items sorted by age. Assignee and customer visible in prod.
+            </p>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Age</th>
+                    <th>SLA</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>REQ-1842</td>
+                    <td>PCI scope review — checkout v2</td>
+                    <td>6d</td>
+                    <td><span class="dash-pill dash-pill--warn">At risk</span></td>
+                  </tr>
+                  <tr>
+                    <td>REQ-1837</td>
+                    <td>Data export job failing nightly</td>
+                    <td>3d</td>
+                    <td><span class="dash-pill dash-pill--info">Watching</span></td>
+                  </tr>
+                  <tr>
+                    <td>REQ-1829</td>
+                    <td>Mobile crash spike (iOS 18)</td>
+                    <td>1d</td>
+                    <td><span class="dash-pill dash-pill--ok">On track</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+          <section class="content-block glass">
+            <h3 class="dash-section-title">Activity feed</h3>
+            <p class="dash-section-desc">Auditable events from the last 24 hours.</p>
+            <ul class="dash-activity">
+              <li>
+                <time>09:14</time>
+                <p>
+                  <strong>David Ray</strong> approved role change for
+                  <strong>REQ-1801</strong> (escalated to Enterprise pod).
+                </p>
+              </li>
+              <li>
+                <time>08:02</time>
+                <p>
+                  Automated billing run posted <strong>$12.4K</strong> in invoices;
+                  <strong>3</strong> require manual review (tax jurisdiction).
+                </p>
+              </li>
+              <li>
+                <time>Yesterday</time>
+                <p>
+                  New integration health check: <strong>Stripe webhooks</strong> 99.98%
+                  success (24h). PagerDuty policy unchanged.
+                </p>
+              </li>
+            </ul>
+          </section>
+        </div>
+
+        <section class="content-block glass mt-3">
+          <h3 class="dash-section-title">Throughput KPIs</h3>
+          <p class="dash-section-desc">
+            Rolling averages used in weekly ops review (demo static values).
+          </p>
+          <div class="dash-kpi-row">
+            <div class="dash-kpi">
+              <strong>4.1h</strong>
+              <span>Median time to first assignment</span>
+            </div>
+            <div class="dash-kpi">
+              <strong>94%</strong>
+              <span>Requests resolved within SLA (30d)</span>
+            </div>
+            <div class="dash-kpi">
+              <strong>1.8</strong>
+              <span>Avg. reopens per closed ticket</span>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="js/main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/dashboard-charts.js"></script>
+  </body>
+</html>
