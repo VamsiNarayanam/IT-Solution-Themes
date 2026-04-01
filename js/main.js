@@ -1,3 +1,13 @@
+const preloader = document.querySelector("[data-preloader]");
+if (preloader) {
+  document.body.classList.add("is-preloading");
+  setTimeout(() => {
+    preloader.classList.add("is-hidden");
+    document.body.classList.remove("is-preloading");
+    setTimeout(() => preloader.remove(), 450);
+  }, 1000);
+}
+
 const heroVideo = document.querySelector(".hero-bg-video");
 if (heroVideo) {
   const tryPlayHero = () => {
